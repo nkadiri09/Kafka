@@ -28,3 +28,14 @@
 	Kafka-topics -zookeeper localhost:2181 —topic <topic-name> —delete
 	Kafka-topics -zookeeper localhost:2181 —topic secound_topic —delete
 	
+### Kafka-console-producer
+	
+	kafka-console-producer --broker-list localhost:9092 --topic 2st_topic --producer-property acks=all
+
+### Kafka-console-consumer
+	
+	kafka-console-consumer --bootstrap-server localhost:9092 --topic first-_topic
+	
+*To read message from beginning*
+
+	kafka-console-consumer --bootstrap-server localhost:9092 --topic first-_topic --from-beginning
