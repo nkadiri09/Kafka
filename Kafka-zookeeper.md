@@ -39,3 +39,7 @@
 *To read message from beginning*
 
 	kafka-console-consumer --bootstrap-server localhost:9092 --topic first-_topic --from-beginning
+
+### Attaching consumer to a group
+	
+	kafka-console-consumer —bootstrap-server localhsost:9092 —topic 1st_topic — group my-frist-application  --from-beginning
