@@ -1,4 +1,4 @@
-# Zookeeper-Kafka start and stop servers
+# Zookeeper-Kafka Hands on commands
 
 ## Create a topic, lsit topics, describe a topic, and delete topic
 
@@ -10,23 +10,23 @@
 
 ### Creating topic:
 
-	Kafka-topics --zookeeper localhost:2181 --topic <topic-name> --create --partitions 3 --replication-factor 1
+	Kafka-topics --create --topic <topic-name>  --partitions 3 --replication-factor 1 --zookeeper localhost:2181
 
-	kafka-topics --zookeeper localhost:2181 --topic first_topic --create --partitions 3 --replication-factor 1
+	kafka-topics --create --topic first_topic --partitions 3 --replication-factor 1 --zookeeper localhost:2181
 
 ### List all the topics:
 
-	kafka-topics -zookeeper localhost:2181 --list
+	kafka-topics --list -zookeeper localhost:2181
 
 ### Topic description:
 
-	kafka-topics -zookeeper localhost:2181 --topic <topic-name> --describe
-	kafka-topics -zookeeper localhost:2181 --topic first_topic --describe
+	kafka-topics --topic <topic-name> --describe -zookeeper localhost:2181
+	kafka-topics --topic first_topic --describe -zookeeper localhost:2181 
 
 ### Topic deletion:
 
-	Kafka-topics -zookeeper localhost:2181 —topic <topic-name> —delete
-	Kafka-topics -zookeeper localhost:2181 —topic secound_topic —delete
+	Kafka-topics —topic <topic-name> —delete -zookeeper localhost:2181 
+	Kafka-topics —topic secound_topic —delete -zookeeper localhost:2181
 	
 ### Kafka-console-producer
 	
