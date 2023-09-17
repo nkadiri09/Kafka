@@ -43,3 +43,5 @@
 ### Attaching consumer to a group
 	
 	kafka-console-consumer —bootstrap-server localhsost:9092 —topic 1st_topic — group my-frist-application  --from-beginning
+
+Pass the Property files to connect --command-config <File-location>
