@@ -6,6 +6,6 @@ Make sure you are under this directory: **kafka\bin**
 
     ./zookeeper-server-start.sh ../config/zookeeper.properties
 
-## Srate the Kafak Server (Make sure your server Zookeeper is up and running)
+## Starte the Kafak Server (Make sure your server Zookeeper is up and running)
 
     ./kafka-server-start ../config/server-0.properties
